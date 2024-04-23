@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CounterContainer CSS */
+
+.counter-bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  height: 90vh;
+  width: 80vw;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.counter-title {
+  color: #e1a75c;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  height: 50vh;
+  width: 60vw;
+}
+
+.custom-input {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  width: 30%;
+  height: 36px;
+  border-radius: 6px;
+  border: 2px solid #ec9b9b;
+  outline: none;
+}
+
+.less-count {
+  color: #ee4949;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.initial-count {
+  color: #000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.great-count {
+  color: #49ee99;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  width: 60%;
+}
+
+.btn {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.decrement-btn {
+  background-color: #ee4949;
+}
+
+.reset-btn:hover {
+  background-color: #f1c488;
+}
+
+.increment-btn {
+  background-color: #49ee99;
 }
